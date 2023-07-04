@@ -1,4 +1,5 @@
-@import url(fonts.sass);
+@import url("/css/fonts.css");
+
 * {
   margin: 0;
   padding: 0;
@@ -13,33 +14,34 @@ img {
 }
 
 .center {
-  padding-left: calc(50% - 660px);
-  padding-right: calc(50% - 660px);
+  padding-left: calc(50% - 1320px / 2);
+  padding-right: calc(50% - 1320px / 2);
 }
 
 .menu {
   display: flex;
+  flex-wrap: wrap;
   gap: 57px;
 }
 .menu__link {
-  font-family: "OpenSans-Regular", sans-serif;
-  color: black;
+  font-family: "OpenSans-Regular,sans-serif";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 24px;
+  line-height: 59px;
   text-transform: capitalize;
+  color: black;
 }
 
 .button {
-  font-family: "OpenSans-Regular", sans-serif;
   padding: 5px 15px;
   background: #1E2832;
   color: #fff;
+  font-family: "OpenSans-Regular sans-serif";
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 22px;
+  line-height: 59px;
   cursor: pointer;
 }
 
@@ -76,11 +78,11 @@ img {
 }
 
 .text {
-  font-family: "OpenSans-Regular", sans-serif;
+  font-family: "OpenSans-Regular,sans-serif";
   font-style: normal;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 22px;
+  line-height: 59px;
 }
 .text_sale {
   color: #FF6F61;
@@ -107,12 +109,12 @@ img {
 }
 
 .title {
-  font-family: "RobotoMedium", sans-serif;
+  text-align: center;
+  font-family: "RobotoMedium,sans-serif";
   font-style: normal;
   font-weight: 500;
-  font-size: 50px;
-  line-height: 59px;
-  text-align: center;
+  font-size: 59px;
+  line-height: 50px;
 }
 
 .header {
@@ -123,6 +125,7 @@ img {
 }
 .header__div {
   display: flex;
+  flex-wrap: wrap;
   gap: 22px;
 }
 .header__stroke {
@@ -139,36 +142,36 @@ img {
   margin-right: 325px;
 }
 .header__text {
-  font-family: "RobotoRegular", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
   text-transform: capitalize;
+  font-family: "RobotoRegular,sans-serif";
+  font-style: normal;
+  font-weight: 400px;
+  font-size: 21px;
+  line-height: 18px;
 }
 .header__title {
-  font-family: "RobotoLight", sans-serif;
+  font-family: "RobotoLight,sans-serif";
   font-style: normal;
-  font-weight: 300;
-  font-size: 74px;
-  line-height: 55px;
+  font-weight: 300px;
+  font-size: 55px;
+  line-height: 74px;
 }
 .header__paragraph {
-  font-family: "RobotoRegular", sans-serif;
+  margin-top: 52px;
+  margin-bottom: 66px;
+  font-family: "RobotoRegular,sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 30px;
   line-height: 55px;
-  margin-top: 52px;
-  margin-bottom: 66px;
 }
 .header__button {
-  font-family: "RobotoRegular", sans-serif;
+  text-transform: capitalize;
+  font-family: "RobotoRegular,sans-serif";
   font-style: normal;
   font-weight: 400;
   font-size: 29px;
   line-height: 34px;
-  text-transform: capitalize;
 }
 .header__box {
   display: flex;
@@ -227,9 +230,10 @@ img {
   height: 648px;
 }
 .photo-content__block {
-  display: flex;
   margin-top: 90px;
   gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
 }
 .photo-content__box {
   display: grid;
@@ -269,19 +273,20 @@ img {
 }
 .products__menu {
   display: flex;
+  flex-wrap: wrap;
   gap: 40px;
 }
 .products__div {
   margin: 35px 0;
 }
 .products__link {
-  font-family: "OpenSans-Regular", sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  text-transform: capitalize;
+  font-family: "OpenSans-Regular,sans-serif";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
   line-height: 22px;
-  color: rgba(0, 0, 0, 0.5);
-  text-transform: capitalize;
 }
 .products__link_active {
   color: #000;
@@ -291,8 +296,9 @@ img {
   text-decoration: underline;
 }
 .products__div {
-  display: flex;
   justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
 }
 .products__blocks {
   display: grid;
@@ -313,6 +319,4 @@ img {
 .zara {
   width: 1920px;
   height: 776px;
-  background-image: url "";
-  background-repeat: no-repeat;
-}/*# sourceMappingURL=style.css.map */
+}

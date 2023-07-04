@@ -6,32 +6,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body class="root">
 
-    <header class="header center">
-        <div class="header__div">
-            <div class="header__search">
+
+    <header id="header" class="header center">
+        <div class="header__items">
+            <div class="header__div">
                 <a class="header__link" href="#">
                     <img src="img/search.svg" alt="search">
                 </a>
             </div>
-            <div class="logo header__logo">
+            <div class="header__div">
+            <a href="index.html" class="logo header__logo">
                 <img src="img/logo (2).svg" alt="icon">
                 <h4 class="logo__text">CORAL</h4>
                 <img src="img/logo (2).svg" alt="icon">
-            </div>
-            <div class="header__block">
+            </a></div>
+            <div class="header__div">
+            <a href="#" class="header__block">
                 <img src="img/header-icon.svg" alt="person">
                 <p class="header__text">Account</p>
-            </div>
-            <div class="header__block">
+            </a>
+            <a href="#" class="header__block">
                 <img src="img/icon.svg" alt="bag-icon">
                 <p class="header__text">Shopping</p>
-            </div>
+            </a>
+        </div>
         </div>
         <div class="header__stroke"></div>
         <nav class="menu">
@@ -49,7 +52,7 @@
                 <p class="header__paragraph">you can explore ans shop many different collection
                     from various brands here.</p>
 
-                <a href="#" class="header__button"> <img src="img/icon_white.svg" alt="white bag"> shop now</a>
+                <a href="#" class="button"> <img src="img/icon_white.svg" alt="white bag"> shop now</a>
 
             </div>
             <div class="header__image">
@@ -57,7 +60,7 @@
             </div>
         </div>
     </header>
-    <section class="main">
+    <main class="main">
         <section class="photo-content center">
             <div class="logotypes">
                 <a href="#" class="logotypes__link">
@@ -86,9 +89,9 @@
                     <a href="#" class="photo-content__link">
                         <img class="photo-content__img" src="img/01.jpg" alt="men with bag">
                     </a>
-                    <a href="#" class="photo-content__link">
+                    <a href="#" class="photo-content__link sale">
                         <img class="photo-content__img " src="img/03.jpg" alt="woman">
-                        <div class="img-sale">Sale</div>
+                        
                     </a>
                     <a href="#" class="photo-content__link">
                         <img class="photo-content__img" src="img/02.jpg" alt="women in red dress">
@@ -101,51 +104,52 @@
         </section>
         <section class="products center">
             <h2 class="title">Or subscribe to the newsletter</h2>
-            <div class="products__div">
-                <div class="products__menu">
-                    <a href="#" class="products__link products__link_active">all products</a>
-                    <a href="#" class="products__link">t-shirt</a>
-                    <a href="#" class="products__link">hoodies</a>
-                    <a href="#" class="products__link">jacket</a>
+            <div class="products-nav">
+                <div class="products-nav__menu">
+                    <a href="#" class="products-nav__link products-nav__link_active">all products</a>
+                    <a href="#" class="products-nav__link">t-shirt</a>
+                    <a href="#" class="products-nav__link">hoodies</a>
+                    <a href="#" class="products-nav__link">jacket</a>
                 </div>
-                <a class="button"> <img src="img/filter-icon.svg" alt="icon"> Filter</a>
+                <div class="products__btn-div">
+                <a class="products-btn"> <img src="img/filter-icon.svg" alt="icon"> Filter</a></div>
             </div>
-            <div class="products__blocks">
-                <div class="products__positioning">
+            <div class="product-blocks">
+                <div class="product-blocks__positioning">
                     <div class="product">
-                        <img src="img/trousers.jpg" alt="trousers">
+                        <img class="product__img" src="img/trousers.jpg" alt="trousers">
                         <p class="text">Adicolor Classics Joggers</p>
-                        <div class="product-box">
+                        <div class="product__box">
                             <p class="text text_category">Dress</p>
                             <p class="text">$63.85</p>
                         </div>
                     </div>
                 </div>
-                <div class="products__positioning">
+                <div class="product-blocks__positioning">
                     <div class="product">
                         <img class="product__img" src="img/bag.jpg" alt="bag photo">
                         <p class="text">Nike Sportswear Futura Luxe</p>
-                        <div class="product-box">
+                        <div class="product__box">
                             <p class="text text_category">Bag</p>
                             <p class="text">$130.00</p>
                         </div>
                     </div>
                 </div>
-                <div class="products__positioning">
+                <div class="product-blocks__positioning">
                     <div class="product">
-                        <img class="product__img" src="img/scarf.jpg" alt="scarf">
+                        <a href="#" class="product__link"><img class="product__img" src="img/scarf.jpg" alt="scarf"></a>
                         <p class="text">Geometric print Scarf</p>
-                        <div class="product-box">
+                        <div class="product__box">
                             <p class="text text_category">scarf</p>
                             <p class="text">$53.00</p>
                         </div>
                     </div>
                 </div>
-                <div class="products__positioning">
+                <div class="product-blocks__positioning">
                     <div class="product sale">
-                        <img class="product__img " src="img/yellowjacket.jpg" alt="yellow jacket">
+                        <a href="#" class="product__link"><img class="product__img " src="img/yellowjacket.jpg" alt="yellow jacket"></a>
                         <p class="text">Yellow Reserved Hoodie</p>
-                        <div class="product-box">
+                        <div class="product__box">
                             <p class="text text_category">Dress</p>
                             <div class="price">
                                 <p class="text text_change_price">$364.00</p>
@@ -154,21 +158,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="products__positioning">
+                <div class="product-blocks__positioning">
                     <div class="product hot">
-                        <img class="product__img" src="img/greendress.jpg" alt="green dress">
+                        <a href="#" class="product__link"><img class="product__img" src="img/greendress.jpg" alt="green dress"></a>
                         <p class="text">Basic Dress Green</p>
-                        <div class="product-box">
+                        <div class="product__box">
                             <p class="text text_category">Dress</p>
                             <p class="text">$236.00</p>
                         </div>
                     </div>
                 </div>
-                <div class="products__positioning">
+                <div class="product-blocks__positioning">
                     <div class="product sale">
-                        <img class="product__img" src="img/shoe.jpg" alt="shoe photo">
+                       <a href="#" class="product__link"> <img class="product__img" src="img/shoe.jpg" alt="shoe photo"></a>
                         <p class="text">Nike Air Zoom Pegasus</p>
-                        <div class="product-box">
+                        <div class="product__box">
                             <p class="text text_category">shoe</p>
                             <div class="price">
                                 <p class="text text_change_price">$220</p>
@@ -177,21 +181,21 @@
                         </div>
                     </div>
                 </div>
-                <div class="products__positioning">
+                <div class="product-blocks__positioning">
                     <div class="product">
-                        <img class="product__img" src="img/maninjacket.jpg" alt=" men's jacket">
+                       <a href="#" class="product__link"> <img class="product__img" src="img/maninjacket.jpg" alt=" men's jacket"></a>
                         <p class="text">Nike Repel Miler</p>
-                        <div class="product-box">
+                        <div class="product__box">
                             <p class="text text_category">Dress</p>
                             <p class="text">$120.50</p>
                         </div>
                     </div>
                 </div>
-                <div class="products__positioning">
+                <div class="product-blocks__positioning">
                     <div class="product">
-                        <img class="product__img" src="img/sunglasses.jpg" alt="sunglasses photo">
+                        <a href="#" class="product__link"><img class="product__img" src="img/sunglasses.jpg" alt="sunglasses photo"></a>
                         <p class="text">Nike Sportswear Futura Luxe</p>
-                        <div class="product-box">
+                        <div class="product__box">
                             <p class="text text_category">Glasses</p>
                             <p class="text">$160.00</p>
                         </div>
@@ -199,12 +203,169 @@
                 </div>
             </div>
         </section>
-        <section class="zara">
-
+        <section class="zara center">
+            <div class="zara__box">
+                <img src="./img/1024px-Zara_Logo 2.png" alt="zara logo" class="zara__img">
+                <img src="./img/1024px-Zara_Logo 1.png" alt="zara logo" class="zara__image">
+                <p class="text zara__text text_reverse">Lustrous yet understated. The new evening
+                    wear collection exclusively offered at the
+                    reopened Giorgio Armani boutique in Los
+                    Angeles.</p>
+                    <a href="#" class="button button_reverse">see collection</a>
+            </div>
         </section>
-    </section>
+   <section class="top-products center">
+    <h2 class="title">Best sellers</h2>
+    <div class="products-nav">
+        <div class="products-nav__menu">
+            <a href="#" class="products-nav__link products-nav__link_active">all products</a>
+            <a href="#" class="products-nav__link">t-shirt</a>
+            <a href="#" class="products-nav__link">hoodies</a>
+            <a href="#" class="products-nav__link">jacket</a>
+        </div>
+        <div class="products__btn-div">
+        <a class="products-btn">Show all</a>
+    </div>
+    </div>
+    <div class="product-blocks">
+        <div class="product-blocks__positioning">
+            <div class="product product_first hot">
+                <a href="#" class="product__link"><img class="product__img" src="img/greendress.jpg" alt="green dress"></a>
+                <p class="text">Basic Dress Green</p>
+                <div class="product__box">
+                    <p class="text text_category">Dress</p>
+                    <p class="text">$236.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-blocks__positioning">
+            <div class="product">
+                <img class="product__img" src="img/bag.jpg" alt="bag photo">
+                <p class="text">Nike Sportswear Futura Luxe</p>
+                <div class="product__box">
+                    <p class="text text_category">Bag</p>
+                    <p class="text">$130.00</p>
+                </div>
+            </div>
+        </div>
+        <div class="product-blocks__positioning">
+            <div class="product sale">
+                <a href="#" class="product__link"><img class="product__img " src="img/yellowjacket.jpg" alt="yellow jacket"></a>
+                <p class="text">Yellow Reserved Hoodie</p>
+                <div class="product__box">
+                    <p class="text text_category">Dress</p>
+                    <div class="price">
+                        <p class="text text_change_price">$364.00</p>
+                        <p class="text text_sale">$155.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="product-blocks__positioning">
+            <div class="product sale">
+               <a href="#" class="product__link"> <img class="product__img" src="img/shoe.jpg" alt="shoe photo"></a>
+                <p class="text">Nike Air Zoom Pegasus</p>
+                <div class="product__box">
+                    <p class="text text_category">shoe</p>
+                    <div class="price">
+                        <p class="text text_change_price">$220</p>
+                        <p class="text text_sale">$198.00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <section class="follow-products center">
+    <h2 class="title follow-products__title">Follow products and discounts on Instagram</h2>
+    <div class="follow-products__slider">
+        <a href="#" class="follow-products__link"><img src="img/card.jpg" alt=""></a>
+        <a href="#" class="follow-products__link"><img src="img/card (1).jpg" alt=""></a>
+        <a href="#" class="follow-products__link"><img src="img/card (2).jpg" alt=""></a>
+        <a href="#" class="follow-products__link"><img src="img/card (3).jpg" alt=""></a>
+        <a href="#" class="follow-products__link"><img src="img/card (4).jpg" alt=""></a>
+        <a href="#" class="follow-products__link"><img src="img/card (5).jpg" alt=""></a>
+    </div>
+        <h2 class="title">Or subscribe to the newsletter</h2>
+       
+        <form class="follow-products__form" action="#">
+            <input placeholder="Email address..." class="follow-products__input" type="email" name="usermail" id="useremail">
 
+            <button class="follow-products__button" type="submit">Submit</button>
+    </div>
+   </section>   
+   <section class="nav center">
+    <div class="nav__box">
+        <div class="nav__div">
+        <a href="index.html" class="logo">
+            <img src="img/logo (2).svg" alt="icon">
+            <h4 class="logo__text">CORAL</h4>
+            <img src="img/logo (2).svg" alt="icon">
+        </a>
+        <p class="text nav__text ">Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua</p>
+        <div class="icons">
+            <a href="#" class="icons__link"><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><style>svg{fill:#000919}</style><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg></a>
+            <a href="#" class="icons__link"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#00060f}</style><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+            <a href="#" class="icons__link"><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><style>svg{fill:#01060e}</style><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg></a>
+            <a href="#" class="icons__link"><svg xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 448 512"><style>svg{fill:#010409}</style><path d="M31.4907 63.4907C0 94.9813 0 145.671 0 247.04V264.96C0 366.329 0 417.019 31.4907 448.509C62.9813 480 113.671 480 215.04 480H232.96C334.329 480 385.019 480 416.509 448.509C448 417.019 448 366.329 448 264.96V247.04C448 145.671 448 94.9813 416.509 63.4907C385.019 32 334.329 32 232.96 32H215.04C113.671 32 62.9813 32 31.4907 63.4907ZM75.6 168.267H126.747C128.427 253.76 166.133 289.973 196 297.44V168.267H244.16V242C273.653 238.827 304.64 205.227 315.093 168.267H363.253C359.313 187.435 351.46 205.583 340.186 221.579C328.913 237.574 314.461 251.071 297.733 261.227C316.41 270.499 332.907 283.63 346.132 299.751C359.357 315.873 369.01 334.618 374.453 354.747H321.44C316.555 337.262 306.614 321.61 292.865 309.754C279.117 297.899 262.173 290.368 244.16 288.107V354.747H238.373C136.267 354.747 78.0267 284.747 75.6 168.267Z"/></svg></a>
+        </div>
+        </div>
+        <div class="nav__div">
+            <h4 class="text text_heading">CATALOG</h4>
+            <a href="#" class="nav__link">Necklaces</a>
+            <a href="#" class="nav__link">hoodies</a>
+            <a href="#" class="nav__link">Jewelry Box</a>
+            <a href="#" class="nav__link">t-shirt</a>
+            <a href="#" class="nav__link">jacket</a>
+        </div>
+        <div class="nav__div">
+            <h4 class="text text_heading ">ABOUT US</h4>
+            <a href="#" class="nav__link">Our Producers</a>
+            <a href="#" class="nav__link">Sitemap</a>
+            <a href="#" class="nav__link">FAQ</a>
+            <a href="#" class="nav__link">About Us</a>
+            <a href="#" class="nav__link">Terms & Conditions</a>
+        </div>
+        <div class="nav__div">
+            <h4 class="text text_heading">CUSTOMER SERVICES</h4>
+            <a href="#" class="nav__link">Contact Us</a>
+            <a href="#" class="nav__link">Track Your Order</a>
+            <a href="#" class="nav__link">Product Care & Repair</a>
+            <a href="#" class="nav__link">Book an Appointment</a>
+            <a href="#" class="nav__link">Shipping & Returns</a>
+        </div>
+    </div>
+    </div>
+   </section>  
+    </main>
+    <footer class="footer center">
+        
+        <div class="footer__div">
+<p class="text_reverse">&copy; <span class="footer__year"></span> Coral , Inc.</p>
+        </div>
+        <div class="footer__div">
+<div class="footer__icons">
+    <a href="#"  class="footer__icon"><img src="img/icons_payment 1.svg" alt="icons payment"></a>
+</div>
+</div>
+<div class="footer__div">
+<a href="#header" class="footer__scroll">
+    <img src="img/button-scroll.svg" alt="scroll icon">
+</a>
+</div>
+</div>
+</footer>
+<script>
 
+    const yearEl = document.querySelector('.footer__year');
+    let today = new Date();
+    let year = today.getFullYear();
+    yearEl.textContent = year;
+   
+   
+</script>
 
 </body>
 

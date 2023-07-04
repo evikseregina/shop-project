@@ -1,0 +1,273 @@
+@import '_fonts'
+@import '_main'
+@import '_vars'
+@import '_mixins'
+
+
+*
+    margin: 0
+    padding: 0
+
+a
+    text-decoration: none
+
+img
+    max-width: 100%
+
+.center
+    padding-left: calc(50% - 1320px / 2)
+    padding-right: calc(50% - 1320px / 2)
+
+.menu
+     display: flex
+     flex-wrap: wrap   
+     &__link
+     @include fontsStyle ('OpenSans-Regular,sans-serif',400,16px,24px)
+     text-transform: capitalize
+     color: black
+
+
+.button
+    
+    padding: 5px 15px
+    background: #1E2832
+    color: #fff
+    @include fontsStyle ('OpenSans-Regular,sans-serif',400,16px,22px)
+    cursor: pointer
+
+.sale::after
+    content: 'sale'
+    text-transform: uppercase
+    color: #FFF
+    background-color: #000
+    padding: 4px 12px
+    position: absolute
+    height: 24px
+    width: 52px
+    text-align: center
+    display: flex
+    justify-content: center
+    top: 22px
+    align-items: center
+
+.hot::after
+    content: 'hot'
+    background: #FF6F61
+    padding: 4px 12px
+    position: absolute
+    height: 24px
+    width: 52px
+    text-align: center
+    display: flex
+    justify-content: center
+    top: 22px
+    align-items: center
+    color: #fff
+    text-transform: uppercase
+
+.text
+     @include fontsStyle ('OpenSans-Regular,sans-serif',600,16px,22px)
+     &_sale
+        color: #FF6F61
+     &_category
+        text-transform: capitalize
+        color: rgba(0, 0, 0, 0.5)
+     &_change_price
+        text-decoration-line: line-through
+        color: rgba(0, 0, 0, 0.5)
+.logo
+    display: flex
+    align-items: center
+    gap: 10px
+
+    &__text
+        font-style: normal
+        font-weight: 400
+        font-size: 28px
+        line-height: 34px
+.title
+     @include fontsStyle ('RobotoMedium,sans-serif',500,50px,59px)
+     text-align: center
+    
+.header
+    background-color: rgba(30, 40, 50, 0.05)
+    display: flex
+    flex-direction: column
+    gap: 30px
+
+    &__div
+         display: flex
+         flex-wrap: wrap
+         gap: 22px
+
+    &__stroke
+        border-bottom: 1px solid #E3E3E3
+        width: 1320px
+
+    &__block
+        display: flex
+        align-items: center
+        gap: 8px
+
+    &__logo
+        margin-left: 523px
+        margin-right: 325px
+
+    &__text
+        text-transform: capitalize
+         @include fontsStyle ('RobotoRegular,sans-serif',400px,21px,18px)
+        
+
+    &__title
+         @include fontsStyle ('RobotoLight,sans-serif',300px,74px,55px)
+
+    &__paragraph
+        margin-top: 52px
+        margin-bottom: 66px
+        @include fontsStyle ('RobotoRegular,sans-serif',400,30px,55px)
+        
+
+    &__button
+        text-transform: capitalize
+        @include fontsStyle ('RobotoRegular,sans-serif',400,29px,34px)
+
+    &__box
+        display: flex
+        flex-wrap: wrap
+        gap: 98px
+
+    &__content
+        width: 686px
+        margin-top: 155px
+
+    &__button
+        padding: 19px 26px
+        background-color: #1E2832
+        color: #fff
+        height: 72px
+        width: 223px
+
+    &__image
+        margin-top: 81px
+        margin-bottom: 60px
+
+.logotypes
+    display: flex
+    flex-wrap: wrap
+    gap: 80px
+    margin-top: 90px
+
+.photo-content
+
+    margin-bottom: 140px
+
+    &__link
+        position: relative
+
+    &__text
+        font-style: normal
+        font-weight: 400
+        font-size: 34px
+        line-height: 40px
+        text-transform: uppercase
+        transform: rotate(-90deg)
+        width: 648px
+        position: absolute
+        right: 55%
+        top: 45%
+        color: #000
+
+    &__img
+        width: 312px
+        height: 312px
+        position: relative
+
+        &_first
+            width: 648px
+            height: 648px
+
+    &__block
+       
+        margin-top: 90px
+        gap: 24px
+        display: flex
+        flex-wrap: wrap
+        
+
+    &__box
+        display: grid
+        grid-template-columns: repeat(2, 2fr)
+        gap: 24px
+
+.img-sale
+    text-transform: uppercase
+    color: #FFF
+    background-color: #000
+    padding: 4px 12px
+    position: absolute
+    height: 24px
+    width: 52px
+    text-align: center
+    display: flex
+    justify-content: center
+    top: 22px
+    align-items: center
+
+.product
+    position: relative
+    &__img
+        width: 312px
+        height: 400px
+
+.products
+
+    margin-bottom: 150px
+
+    &__positioning
+        max-width: 312px
+        max-height: 478px
+
+    &__menu
+       
+       display: flex
+       flex-wrap: wrap
+       gap: 40px
+
+    &__div
+        margin: 35px 0
+
+    &__link
+        color: rgba(0, 0, 0, 0.5)
+        text-transform: capitalize
+        @include fontsStyle ('OpenSans-Regular,sans-serif',600,16px,22px)
+
+        &_active
+            color: #000
+    &__link:hover
+        color: #000
+        text-decoration: underline
+
+    &__div
+         justify-content: space-between
+         display: flex
+         flex-wrap: wrap
+
+    &__blocks
+        display: grid
+        grid-template-columns: repeat( 4, 312px)
+        gap: 24px
+
+.product-box
+    display: flex
+    justify-content: space-between
+
+.price
+    display: flex
+    gap: 12px
+
+.zara
+    width: 1920px
+    height: 776px
+    background-image: url("img/")
+  
+    

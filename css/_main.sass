@@ -1,4 +1,5 @@
-@import url(fonts.sass)
+@import  '_mixins'
+
 
 *
     margin: 0
@@ -13,28 +14,23 @@ img
 .center
     padding-left: calc(50% - 1320px / 2)
     padding-right: calc(50% - 1320px / 2)
+
 .menu
     display: flex
+    flex-wrap: wrap
     gap: 57px
 
     &__link
-        font-family: 'OpenSans-Regular',sans-serif
-        color: black
-        font-style: normal
-        font-weight: 400
-        font-size: 16px
-        line-height: 24px
+        @include fontsStyle ('OpenSans-Regular,sans-serif',400,24px,59px)
         text-transform: capitalize
+        color: black
 
 .button
-    font-family: 'OpenSans-Regular',sans-serif
+    
     padding: 5px 15px
     background: #1E2832
     color: #fff
-    font-style: normal
-    font-weight: 400
-    font-size: 16px
-    line-height: 22px
+    @include fontsStyle ('OpenSans-Regular sans-serif',400,22px,59px)
     cursor: pointer
 
 .sale::after
@@ -68,17 +64,13 @@ img
     text-transform: uppercase
 
 .text
-    font-family: 'OpenSans-Regular', sans-serif
-    font-style: normal
-    font-weight: 600
-    font-size: 16px
-    line-height: 22px
-    &_sale
+     @include fontsStyle ('OpenSans-Regular,sans-serif',600,22px,59px)
+     &_sale
         color: #FF6F61
-    &_category
+     &_category
         text-transform: capitalize
         color: rgba(0, 0, 0, 0.5)
-    &_change_price
+     &_change_price
         text-decoration-line: line-through
         color: rgba(0, 0, 0, 0.5)
 .logo
@@ -92,13 +84,107 @@ img
         font-size: 28px
         line-height: 34px
 .title
-    font-family: 'RobotoMedium',sans-serif
-    font-style: normal
-    font-weight: 500
-    font-size: 50px
-    line-height: 59px
+    
     text-align: center
+     @include fontsStyle ('RobotoMedium,sans-serif',500,59px,50px)
+    
+.header
+    background-color: rgba(30, 40, 50, 0.05)
+    display: flex
+    flex-direction: column
+    gap: 30px
 
+    &__div
+       display: flex
+       flex-wrap: wrap //провкерить надо ли
+
+*
+    margin: 0
+    padding: 0
+
+a
+    text-decoration: none
+
+img
+    max-width: 100%
+
+.center
+    padding-left: calc(50% - 1320px / 2)
+    padding-right: calc(50% - 1320px / 2)
+
+.menu
+    display: flex
+    flex-wrap: wrap
+    gap: 57px
+
+    &__link
+        @include fontsStyle ('OpenSans-Regular,sans-serif',400,24px,unset)
+        text-transform: capitalize
+        color: black
+
+.button
+    
+    padding: 5px 15px
+    background: #1E2832
+    color: #fff
+    @include fontsStyle ('OpenSans-Regular,sans-serif',400,22px,50px)
+    cursor: pointer
+
+.sale::after
+    content: 'sale'
+    text-transform: uppercase
+    color: #FFF
+    background-color: #000
+    padding: 4px 12px
+    position: absolute
+    height: 24px
+    width: 52px
+    text-align: center
+    display: flex
+    justify-content: center
+    top: 22px
+    align-items: center
+
+.hot::after
+    content: 'hot'
+    background: #FF6F61
+    padding: 4px 12px
+    position: absolute
+    height: 24px
+    width: 52px
+    text-align: center
+    display: flex
+    justify-content: center
+    top: 22px
+    align-items: center
+    color: #fff
+    text-transform: uppercase
+
+.text
+     @include fontsStyle ('OpenSans-Regular,sans-serif',600,22px,50px)
+     &_sale
+        color: #FF6F61
+     &_category
+        text-transform: capitalize
+        color: rgba(0, 0, 0, 0.5)
+     &_change_price
+        text-decoration-line: line-through
+        color: rgba(0, 0, 0, 0.5)
+.logo
+    display: flex
+    align-items: center
+    gap: 10px
+
+    &__text
+        font-style: normal
+        font-weight: 400
+        font-size: 28px
+        line-height: 34px
+.title
+    
+    text-align: center
+     @include fontsStyle ('RobotoMedium,sans-serif',500,59px,50px)
+    
 .header
     background-color: rgba(30, 40, 50, 0.05)
     display: flex
@@ -107,6 +193,7 @@ img
 
     &__div
         display: flex
+        flex-wrap: wrap
         gap: 22px
 
     &__stroke
@@ -123,36 +210,22 @@ img
         margin-right: 325px
 
     &__text
-        font-family: 'RobotoRegular',sans-serif
-        font-style: normal
-        font-weight: 400
-        font-size: 18px
-        line-height: 21px
         text-transform: capitalize
+         @include fontsStyle ('RobotoRegular,sans-serif',400px,21px,18px)
+        
 
     &__title
-        font-family: 'RobotoLight',sans-serif
-        font-style: normal
-        font-weight: 300
-        font-size: 74px
-        line-height: 55px
+         @include fontsStyle ('RobotoLight,sans-serif',300px,55px,74px)
 
     &__paragraph
-        font-family: 'RobotoRegular',sans-serif
-        font-style: normal
-        font-weight: 400
-        font-size: 30px
-        line-height: 55px
         margin-top: 52px
         margin-bottom: 66px
+        @include fontsStyle ('RobotoRegular,sans-serif',400,30px,55px)
+        
 
     &__button
-        font-family: 'RobotoRegular',sans-serif
-        font-style: normal
-        font-weight: 400
-        font-size: 29px
-        line-height: 34px
         text-transform: capitalize
+        @include fontsStyle ('RobotoRegular,sans-serif',400,29px,34px)
 
     &__box
         display: flex
@@ -209,9 +282,12 @@ img
             height: 648px
 
     &__block
-        display: flex
+       
         margin-top: 90px
         gap: 24px
+        display: flex
+        flex-wrap: wrap
+        
 
     &__box
         display: grid
@@ -247,19 +323,18 @@ img
         max-height: 478px
 
     &__menu
+
         display: flex
+        flex-wrap: wrap
         gap: 40px
+
     &__div
         margin: 35px 0
 
     &__link
-        font-family: 'OpenSans-Regular',sans-serif
-        font-style: normal
-        font-weight: 600
-        font-size: 16px
-        line-height: 22px
         color: rgba(0, 0, 0, 0.5)
         text-transform: capitalize
+        @include fontsStyle ('OpenSans-Regular,sans-serif',600,16px,22px)
         &_active
             color: #000
     &__link:hover
@@ -267,8 +342,9 @@ img
         text-decoration: underline
 
     &__div
-        display: flex
         justify-content: space-between
+        display: flex
+        flex-wrap: wrap
 
     &__blocks
         display: grid
@@ -286,6 +362,9 @@ img
 .zara
     width: 1920px
     height: 776px
-    background-image: url ('')
-    background-repeat: no-repeat
-    ba
+    
+    
+
+        
+
+   

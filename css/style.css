@@ -366,7 +366,7 @@ path{
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  height: 1010px; 
+  height: 800px; 
   background-image: url(../img/womanindress.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -419,7 +419,7 @@ path{
   padding: 6px 15px;
   width: 643px;
 height: 32px;
-outline-offset: unset;
+outline: unset;
 border: none;
 border-bottom: 3px solid #000;
 font-size: 16px;
@@ -429,6 +429,9 @@ background-color: rgba(30, 40, 50, 0.005);
 color:rgba(30, 40, 50, 0.5); 
 text-transform: capitalize;
 
+}
+.follow-products__input:hover{
+  outline: none;
 }
 .follow-products__button{
 padding: 6px 16px;
@@ -542,7 +545,7 @@ transition: all 0.4s;
     padding-right: calc(50% - 600px /2);
   }
   .zara{
-    background-size: unset;
+    background-size: 1150px;
   }
   .zara__text{  
      width: 250px;

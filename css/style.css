@@ -430,9 +430,6 @@ color:rgba(30, 40, 50, 0.5);
 text-transform: capitalize;
 
 }
-.follow-products__input:hover{
-  outline: none;
-}
 .follow-products__button{
 padding: 6px 16px;
 font-size: 18px;
